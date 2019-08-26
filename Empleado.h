@@ -19,6 +19,33 @@
 
 
 #include <string>
-
+class Empleado {	
+protected:
+	int id;
+	std::string nombre;
+	int numero;
+	int anoExperiencia;
+	float salariobase;
+	bool flagRevision;
+	//metodos
+	float aumentoSalarioExperiencia(int *);
+	void revisionAleatoria(bool*);
+public:
+	Empleado();
+	Empleado(int*);
+	std::string ReporteEmpleado();
+	void setNombre(std::string);
+	std::string getNombre();
+	void setID(int);
+	int getID();
+	void setNumero(int*);
+	int getNumero();
+	void setAnoExperiencia(int);
+	int getAnoExperiencia();
+	void setSalarioBase(float);
+	float getSalarioBase();
+	void setFlagRevision(bool);
+	bool getFlagRevision();
+};
 
 #endif //EMPLEADOPUNTEROS_EMPLEADO_H

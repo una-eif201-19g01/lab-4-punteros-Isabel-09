@@ -6,7 +6,7 @@ int main() {
 	srand((unsigned)time(NULL));
 
 	Empleado empleado[4];
-	
+
 	empleado[0].setNombre("Mike");
 	empleado[0].setAnoExperiencia(2);
 	empleado[0].setSalarioBase(1200000);

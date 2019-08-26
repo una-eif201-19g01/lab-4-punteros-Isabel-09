@@ -19,7 +19,7 @@
 
 
 #include <string>
-class Empleado {	
+class Empleado {
 protected:
 	int id;
 	std::string nombre;
@@ -28,7 +28,7 @@ protected:
 	float salariobase;
 	bool flagRevision;
 	//metodos
-	float aumentoSalarioExperiencia(int *);
+	float aumentoSalarioExperiencia(int*);
 	void revisionAleatoria(bool*);
 public:
 	Empleado();

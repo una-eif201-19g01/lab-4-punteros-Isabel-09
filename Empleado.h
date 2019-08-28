@@ -21,10 +21,9 @@
 #include <string>
 class Empleado {
 protected:
-	int id;
 	std::string nombre;
 	int numero;
-	int anoExperiencia;
+	int annoExperiencia;
 	float salariobase;
 	bool flagRevision;
 	//metodos
@@ -32,16 +31,14 @@ protected:
 	void revisionAleatoria(bool*);
 public:
 	Empleado();
-	Empleado(int*);
+	Empleado(const std::string& nombre, int anoExperiencia, float salariobase);
 	std::string ReporteEmpleado();
 	void setNombre(std::string);
 	std::string getNombre();
-	void setID(int);
-	int getID();
-	void setNumero(int*);
+	void setNumero(int);
 	int getNumero();
-	void setAnoExperiencia(int);
-	int getAnoExperiencia();
+	void setAnnoExperiencia(int);
+	int getAnnoExperiencia();
 	void setSalarioBase(float);
 	float getSalarioBase();
 	void setFlagRevision(bool);
